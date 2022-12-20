@@ -5,7 +5,7 @@
     "display": "standalone",
     "scope": ".",
     "start_url": "./",
-    "name": "FirstPWA",
+    "name": "Jumbo",
     "short_name": "fpwa",
     "description": "First_PWA_test",
     "icons": [
