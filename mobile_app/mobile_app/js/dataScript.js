@@ -4,7 +4,21 @@ const ul = document.createElement("ul");
 output.append(output1);
 output.append(ul);
 const url = "data.json";
+const url1 = "myList.json";
 let total = 0;
+// var ajaxhttp = new XMLHttpRequest();
+
+// ajaxhttp.open("GET", url, true);
+// ajaxhttp.setRequestHeader("content-type", "application/json");
+// ajaxhttp.onreadystatechange = function () {
+//   if (ajaxhttp.readyState == 4 && ajaxhttp.status == 200) {
+//     var jcontent = JSON.parse(ajaxhttp.responseText);
+//     console.log(jcontent);
+//     console.log(ajaxhttp);
+//   }
+// };
+// ajaxhttp.send(url1);
+// console.log(ajaxhttp);
 
 window.addEventListener("DOMContentLoaded", () => {
   output1.textContent = "ready";
@@ -33,8 +47,7 @@ function addToPage(arr) {
         return;
       }
       el.quantity--;
-      price = el.price;
-      total += price;
+      total += el.price;
       showTotal();
       li.textContent =
         el.name +
@@ -45,10 +58,21 @@ function addToPage(arr) {
         "$, " +
         "       +" +
         total;
+      var newData = JSON.stringify(el);
+      console.log(newData);
+      AddToJSON();
+      //url1.append(url, JSON.stringify(el));
     });
   });
   function showTotal() {
     console.log(total);
     return total;
   }
+}
+function AddToJSON() {
+  var fs = require("fs");
+  fs.writeFile(url1, "HelloWorld!", function (err) {
+    if (err) throw err;
+    console.log("Saved!");
+  });
 }
