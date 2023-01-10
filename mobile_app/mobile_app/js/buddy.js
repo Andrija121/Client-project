@@ -29,7 +29,7 @@ function animate(){
     requestAnimationFrame(animate);
     obj.rotation.y += 0.0005;
     renderer.render(scene,camera);
-}
+};
 
 animate();
 

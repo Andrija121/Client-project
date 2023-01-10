@@ -14,7 +14,7 @@ html, body, form						{ padding:0px;margin:0px; }
 
 /* Main elements */
 body{
-	background-color: #F7F6F6;
+	background-color: #ffffff;
 }
 
 
@@ -57,8 +57,12 @@ body{
 canvas{
     display: block;
     margin: 0px !important;
-    width: 100% !important;
-    height: 100% !important;
+    width: 30% !important;
+    height: 30% !important;
+	position: absolute;
+	top: 45%;
+	left: 45%;
+
 }
 
 header h1{
@@ -66,8 +70,3 @@ header h1{
     font-family: 'Unbounded', cursive;
 }
 
-@media only screen and (max-width: 600px) {
-	canvas {
-		height: 200% !important;
-	}
-  }
