@@ -8,15 +8,25 @@
                <link rel="stylesheet" href="css/myListStyle.css" type="text/css">
                <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
                <script type="module" defer src="/mobile_app/mobile_app/js/buddy.js"></script>
+               <script src="/mobile_app/mobile_app/js/buddyClick.js"></script>
 </head>
 <body>
                <script type="module" src="js/dataScript.js"></script> 
-               <div id="myData"></div>
+               <div id="myData">
+               <div id="item1"></div>
+               <div id="item2"></div>
+               <div id="item3"></div>
+               <div id="item4"></div>
+               </div>
+               <div id="buddyDiv">
+                              <h1 id="tigerSays">Click on buddy for help</h1>
+                              <div id="tiger" onclick="onclick(changeText())">
+                                             <script src="./js/three.js"></script>
 
-               <h1>Things buddy will say</h1>
-                              <button id="btnBack"><a href="/mobile_app/mobile_app/index.html"><span>Back</span></a></button>
-                              <button id="btnForth"><a href="/mobile_app/mobile_app/buddyToScreenPage.html"><span>Forth</span></a></button>
-                              <script src="./js/three.js"></script>
+                              </div>
+               </div>
+               <button id="btnBack"><a href="/mobile_app/mobile_app/groceries.html"><span>Back</span></a></button>
+               <button id="btnForth"><a href="/mobile_app/mobile_app/buddyToScreenPage.html"><span>Forth</span></a></button>
                
 </body> 
 </html>
