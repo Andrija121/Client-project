@@ -1,44 +1,57 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title>Jumbo</title>
-    <link rel="stylesheet" type="text/css" href="/mobile_app/mobile_app/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- stylecss -->
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="assets/css/style.css" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-    <script src="script.js"></script>
-
   </head>
-  <body>
 
+  <body>
       <div class="wrapper">
         <form class="form">
           <div class="pageTitle title">Customize Profile </div>
           <div class="secondaryTitle title">Please fill this form.</div>
           <input type="text" class="name formEntry" placeholder="Name" />
 
-
-
-
-          <div class="entry entry-vehicles">
-        <label for="vehicles">Valuable information:</label>
-        <input type="checkbox" name="vehicles" value="car" id="car" >Nutritional values</input>
-        <input type="checkbox" name="vehicles" value="truck" id="truck" >Allergies</input>
-        <input type="checkbox" name="vehicles" value="motorcycle" id="motorcycle" >Ingredients</input>
+          <div class="entry entry-customer">
+        <label for="customer">Allergies:</label>
+        <input type="checkbox" name="customer" value="Milk" id="Milk" >Milk</input>
+        <input type="checkbox" name="customer" value="Fish" id="Fish" >Fish</input>
+        <input type="checkbox" name="customer" value="Wheat" id="Wheat" >Wheat</input>
+        <input type="checkbox" name="customer" value="Eggs" id="Eggs" >Eggs</input>
+        <input type="checkbox" name="customer" value="Peanuts" id="Peanuts" >Peanuts</input>
+        <input type="checkbox" name="customer" value="Soy" id="Soy" >Soy</input>
+        <input type="checkbox" name="customer" value="Gluten" id="Gluten" >Gluten</input>
       </div>
 
- <textarea class="message formEntry" placeholder="Extra information"></textarea>
-<input type="checkbox" class="termsConditions" value="Term">
-<label style="color: grey" for="terms"> I Accept the <span style="color: #0e3721">Terms of Use</span> & <span
-    style="color: #0e3721">Privacy Policy</span>.</label><br>
+      <div class="entry profile">
+        <label for="profile">Choose customer profile:</label>
+        <br>
+        <select name="profile" id="profile" multiple>
+          <option value="Vegan">Vegan	</option>
+          <option value="Vegetarian">Vegetarian</option>
+          <option value="Low budget">Low budget</option>
+          <option value="High budget">High budget</option>
+          <option value="Low product quantity">Low product quantity</option>
+          <option value="High product quantity">High product quantity</option>
+          <option value="Environmentalist">Environmentalist</option>
+          <option value="Health">Health</option>
+          <option value="Allergic">Allergic</option>
+        </select>
+      </div>
 
-<button class="submit formEntry"><a href="/mobile_app/mobile_app/groceries.html">Submit</a></button>
- </form>
- </div>
+       <textarea class="message formEntry" placeholder="Extra information"></textarea>
 
-    </body>
+        <button class="submit formEntry" onclick="thanks()">Submit</button>
+        <button class="submit formEntry"><a href="/mobile_app/mobile_app/groceries.html">Submit</a></button>
+        </form>
+
+      </div>
+  </body>
 </html>

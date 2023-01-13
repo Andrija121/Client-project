@@ -1,0 +1,72 @@
+/* Variables */
+:root {
+	--colors-background-dark:#444;
+	--colors-background-light:#ffff;
+	--colors-text-light:#fff; 
+	--colors-text-highlight:#456ebf;
+	--colors-text-dark:#000; 
+	--fonts-normal-text:arial,verdana; 
+}
+
+/* Small resets */
+*														{ box-sizing:border-box; }
+html, body, form						{ padding:0px;margin:0px; }
+
+/* Main elements */
+body{
+	background-color: #ffffff;
+}
+
+
+.ImageHomepage{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	margin-top:150px;
+}
+
+.Homebutton{
+	width: 150px;
+	font-size: 30px;
+	text-align: center;
+	border-radius: 10px;
+	border: none;
+	color: black;
+	background-color: #FBC41A;
+	box-shadow: #000;
+	margin-top: 100px;
+	transition: 0.3s;
+}
+
+.containerHomeButton{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.Homebutton:hover {
+	background-color: #FBC41A;
+	box-shadow: 0px 15px 20px black(46, 229, 157, 0.4);
+	color: #fff;
+	transform: translateY(-7px);
+  }
+
+  /* Buddy elements */
+
+canvas{
+    display: block;
+    margin: 0px !important;
+    width: 30% !important;
+    height: 30% !important;
+	position: absolute;
+	top: 45%;
+	left: 45%;
+
+}
+
+header h1{
+    text-align: center;
+    font-family: 'Unbounded', cursive;
+}
+
