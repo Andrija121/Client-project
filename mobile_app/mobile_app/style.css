@@ -31,6 +31,21 @@ body {
   margin: 0 auto 5px 80px;
 }
 
+@media (min-width: 600px) {
+    main {
+      flex-wrap: nowrap;
+    }
+
+    div {
+      flex-basis: 33%;
+    }
+  }
+
+  /* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
 .pageTitle{
   font-size: 2em;
   font-weight: bold;
@@ -136,7 +151,7 @@ body {
 
 }
 
-.customer {
+.entry {
   padding: 4px 20;
   margin: 0;
   margin-left: 85px;
@@ -144,7 +159,7 @@ body {
   height: 100px;
 }
 
-.customer label {
+.entry label {
   display: block;
   margin: 0;
   padding: 1px;
@@ -156,25 +171,33 @@ body {
 
 
 .entry-gender,
-.entry-vehicles {
+.entry-customer {
   font-size: 20px;
-  margin-left: 85px;
+  margin: 0  auto;
 }
 
-.customer label {
+.profile label {
   display: inline-block;
   font-family: inherit;
   width: 310px;
-  margin-left: -5px;
+   margin-left: -25px;
 }
 
-.customer select,
+.profile select{
+
+  display: inline-block;
+  font-family: inherit;
+  width: 310px;
+  font-size: 17px;
+margin-left: -40px;
+}
+
+
 .feedback label,
 .feedback textarea {
   display: inline-block;
   font-family: inherit;
   width: 320px;
-  margin-left: -5px;
   font-size: 17px;
 }
 
@@ -197,6 +220,6 @@ body {
   font-size: 20px;
 }
 
-.entry-customer {
+.entry-profile {
   font-size: 20px;
 }

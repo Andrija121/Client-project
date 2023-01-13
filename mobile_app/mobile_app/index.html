@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <!-- stylecss -->
 <link rel="stylesheet" type="text/css" href="style.css">
@@ -15,23 +15,23 @@
   <body>
       <div class="wrapper">
         <form class="form">
-          <div class="pageTitle title">Customise Profile </div>
+          <div class="pageTitle title">Customize Profile </div>
           <div class="secondaryTitle title">Please fill this form.</div>
           <input type="text" class="name formEntry" placeholder="Name" />
 
-          <div class="customer entry-vehicles">
-        <label for="vehicles">Allergies:</label>
-        <input type="checkbox" name="vehicles" value="car" id="car" >Milk</input>
-        <input type="checkbox" name="vehicles" value="truck" id="truck" >Fish</input>
-        <input type="checkbox" name="vehicles" value="motorcycle" id="motorcycle" >Wheat</input>
-        <input type="checkbox" name="vehicles" value="motorcycle" id="motorcycle" >Eggs</input>
-        <input type="checkbox" name="vehicles" value="motorcycle" id="motorcycle" >Peanuts</input>
-        <input type="checkbox" name="vehicles" value="motorcycle" id="motorcycle" >soy</input>
-        <input type="checkbox" name="vehicles" value="motorcycle" id="motorcycle" >Gluten</input>
+          <div class="entry entry-customer">
+        <label for="customer">Allergies:</label>
+        <input type="checkbox" name="customer" value="Milk" id="Milk" >Milk</input>
+        <input type="checkbox" name="customer" value="Fish" id="Fish" >Fish</input>
+        <input type="checkbox" name="customer" value="Wheat" id="Wheat" >Wheat</input>
+        <input type="checkbox" name="customer" value="Eggs" id="Eggs" >Eggs</input>
+        <input type="checkbox" name="customer" value="Peanuts" id="Peanuts" >Peanuts</input>
+        <input type="checkbox" name="customer" value="Soy" id="Soy" >Soy</input>
+        <input type="checkbox" name="customer" value="Gluten" id="Gluten" >Gluten</input>
       </div>
 
-      <div class="customer">
-        <label for="hobbies">Choose customer profile:</label>
+      <div class="entry profile">
+        <label for="profile">Choose customer profile:</label>
         <br>
         <select name="profile" id="profile" multiple>
           <option value="Vegan">Vegan	</option>
@@ -46,9 +46,7 @@
         </select>
       </div>
 
-          <textarea class="message formEntry" placeholder="Extra information"></textarea>
-          <input type="checkbox" class="termsConditions" value="Term">
-          <label style="color: grey" for="terms"> I Accept the <span style="color: #0e3721">Terms of Use</span> & <span style="color: #0e3721">Privacy Policy</span>.</label><br>
+       <textarea class="message formEntry" placeholder="Extra information"></textarea>
           <button class="submit formEntry" onclick="thanks()">Submit</button>
         </form>
 
