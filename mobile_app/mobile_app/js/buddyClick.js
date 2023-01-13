@@ -10,7 +10,7 @@ function changeText() {
   let random = Math.floor(Math.random() * 20) + 1;
 
   text.onclick = function () {
-    h1.textContent = "Please select the item from list you need help with";
+    h1.textContent = "Please select the an item";
 
     for (let i = 0; i < items.length; i++) {
       items[i].style.cursor = "pointer";
