@@ -10,59 +10,48 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-    <script src="script.js"></script>
-
   </head>
-  <body>
 
+  <body>
       <div class="wrapper">
         <form class="form">
           <div class="pageTitle title">Customise Profile </div>
           <div class="secondaryTitle title">Please fill this form.</div>
           <input type="text" class="name formEntry" placeholder="Name" />
-          <input type="text" class="email formEntry" placeholder="Email"/>
 
-
-
-
-          <div class="entry entry-vehicles">
-        <label for="vehicles">Valuable information:</label>
-        <input type="checkbox" name="vehicles" value="car" id="car" required>Nutritional values</input>
-        <input type="checkbox" name="vehicles" value="truck" id="truck" required>Allergies</input>
-        <input type="checkbox" name="vehicles" value="motorcycle" id="motorcycle" required>Ingredients</input>
-
+          <div class="customer entry-vehicles">
+        <label for="vehicles">Allergies:</label>
+        <input type="checkbox" name="vehicles" value="car" id="car" >Milk</input>
+        <input type="checkbox" name="vehicles" value="truck" id="truck" >Fish</input>
+        <input type="checkbox" name="vehicles" value="motorcycle" id="motorcycle" >Wheat</input>
+        <input type="checkbox" name="vehicles" value="motorcycle" id="motorcycle" >Eggs</input>
+        <input type="checkbox" name="vehicles" value="motorcycle" id="motorcycle" >Peanuts</input>
+        <input type="checkbox" name="vehicles" value="motorcycle" id="motorcycle" >soy</input>
+        <input type="checkbox" name="vehicles" value="motorcycle" id="motorcycle" >Gluten</input>
       </div>
 
-      <div class="entry hobbies">
+      <div class="customer">
         <label for="hobbies">Choose customer profile:</label>
         <br>
-        <select name="hobbies" id="hobbies" multiple>
-          <option value="photography">Vegan	</option>
-          <option value="gaming">Vegetarian</option>
-          <option value="traveling">Low budget</option>
-          <option value="photography">High budget</option>
-          <option value="gaming">Low product quantity</option>
-          <option value="traveling">High product quantity</option>
-          <option value="photography">Environmentalist</option>
-          <option value="gaming">Health</option>
-          <option value="traveling">Allergic</option>
+        <select name="profile" id="profile" multiple>
+          <option value="Vegan">Vegan	</option>
+          <option value="Vegetarian">Vegetarian</option>
+          <option value="Low budget">Low budget</option>
+          <option value="High budget">High budget</option>
+          <option value="Low product quantity">Low product quantity</option>
+          <option value="High product quantity">High product quantity</option>
+          <option value="Environmentalist">Environmentalist</option>
+          <option value="Health">Health</option>
+          <option value="Allergic">Allergic</option>
         </select>
       </div>
-
 
           <textarea class="message formEntry" placeholder="Extra information"></textarea>
           <input type="checkbox" class="termsConditions" value="Term">
           <label style="color: grey" for="terms"> I Accept the <span style="color: #0e3721">Terms of Use</span> & <span style="color: #0e3721">Privacy Policy</span>.</label><br>
           <button class="submit formEntry" onclick="thanks()">Submit</button>
         </form>
+
       </div>
-
-<script src="script.js" charset="utf-8">
-
-</script>
-
-
   </body>
 </html>
