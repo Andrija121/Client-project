@@ -1,5 +1,5 @@
 body{
-               background-color: #e5de00;
+               background-color: #fbcb04;
 
 }
 
@@ -34,7 +34,7 @@ div{
                opacity: 0.9;
 }
 div:hover {
-               background-color:#e6b400;
+               background-color:#fbcb04;
 }
 p{
                margin-top: 70px;
@@ -60,6 +60,12 @@ button span{
                display: inline-block;
                position: relative;
                transition: 0.5s;
+}
+#btnExit{
+     align-items: center;
+     text-align: center;
+     width: 100%;
+     border: none;
 }
 
 #btnBack span:after {
@@ -128,7 +134,7 @@ h1{
 
 }
 #buddyDiv:hover {
-     background-color: #e5de00;
+     background-color: #fbcb04;
 }
 #tiger{
                border: none;
@@ -192,5 +198,10 @@ h1{
      color: black;
      font-size: small;
      font-style: italic;
+}
+h3{
+          color: #e47200;
+          text-align: center;
+          font-size: 10px;
 }
 

@@ -10,7 +10,9 @@ let camera = new THREE.PerspectiveCamera(
 
 let renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.domElement.id = "tiger";
 document.body.appendChild(renderer.domElement);
+ol();
 
 const loader = new GLTFLoader();
 

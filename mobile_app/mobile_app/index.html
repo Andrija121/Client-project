@@ -5,7 +5,6 @@
     <title></title>
     <!-- stylecss -->
 <link rel="stylesheet" type="text/css" href="style.css">
-<link href="assets/css/style.css" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,10 +49,14 @@
             
 
        <textarea class="message formEntry" placeholder="Extra information"></textarea>
-
-        <button class="submit formEntry" onclick="thanks()"><a href="/mobile_app/mobile_app/groceries.html">Submit</a></button></button>
-        </form>
-
+      </form>
+      <button id="myButton" class="submit formEntry" onclick="window.location.href='groceries.html'" >Submit</button>
       </div>
   </body>
+  <!-- <script>
+    var url = "./groceries.html"
+    document.getElementsByClassName("submit formEntry").onclick = function (){
+      window.location.href=url;
+    }
+  </script>  -->
 </html>

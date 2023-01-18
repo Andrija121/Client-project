@@ -18,7 +18,7 @@ function changeText() {
         h1.textContent = "Please go to section " + random;
         setTimeout(() => {
           window.location.href = "./buddyToScreenPage.html";
-        }, 5000);
+        }, 3000);
       };
     }
   };

@@ -5,9 +5,9 @@ body {
 }
 
 .arrow {
-               z-index: 1;
+               z-index: 0;
                position: absolute;
-               top: 20%;
+               top: 1%;
                left: 34%;
                transform: translate(-50%, -50%);
                transform: rotate(180deg);
@@ -125,4 +125,9 @@ canvas {
 header h1 {
                text-align: center;
                font-family: 'Unbounded', cursive;
+}
+#screen{
+               height: 1160px;
+               width: 420px;
+               z-index: -1;
 }
