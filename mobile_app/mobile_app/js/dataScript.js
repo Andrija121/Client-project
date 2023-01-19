@@ -92,9 +92,9 @@ function appendData(data) {
     var div = document.createElement("div");
     total += data[i].price;
 
-    div.innerHTML = data[i].name + " " + data[i].price + "$";
+    div.innerHTML = data[i].name + " " + data[i].price + "€";
     mainContainer.appendChild(div);
-    p.innerHTML = "Total " + total.toFixed(2) + "$";
+    p.innerHTML = "Total " + total.toFixed(2) + "€";
 
     mainContainer.appendChild(p);
   }
